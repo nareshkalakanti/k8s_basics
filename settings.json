@@ -1,18 +1,18 @@
 {
     "window.zoomLevel": 1,
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Hop Light",
+    "workbench.colorTheme": "JetBrains New UI Dark Theme",
     "workbench.startupEditor": "none",
     "workbench.settings.editor": "json",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorCustomizations": {
-        "terminal.background": "#fff",
+        // "terminal.background": "#fff",
         "titleBar.activeBackground": "#236F9B",
-        "titleBar.activeForeground": "#fff",
-        "panel.background": "#fff",
-        "tab.activeBackground": "#fbfbfb",
-        "tab.activeBorder": "#fbfbfb"
+        // "titleBar.activeForeground": "#fff",
+        // "panel.background": "#fff",
+        // "tab.activeBackground": "#fbfbfb",
+        // "tab.activeBorder": "#fbfbfb"
     },
     "editor.formatOnSave": true,
     "explorer.openEditors.visible": 1,
@@ -55,5 +55,6 @@
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.diagnosticSeverityOverrides": {
         "reportIncompatibleMethodOverride": "error"
-    }
+    },
+    "terminal.integrated.fontFamily": "Consolas"
 }
