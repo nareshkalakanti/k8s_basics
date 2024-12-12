@@ -1,38 +1,34 @@
 {
     "window.zoomLevel": 1,
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "JetBrains New UI Dark Theme",
+    "workbench.colorTheme": "GitHub Plus",
     "workbench.startupEditor": "none",
     "workbench.settings.editor": "json",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorCustomizations": {
         // "terminal.background": "#fff",
-        "titleBar.activeBackground": "#236F9B",
+        // "titleBar.activeBackground": "#236F9B",
         // "titleBar.activeForeground": "#fff",
         // "panel.background": "#fff",
         // "tab.activeBackground": "#fbfbfb",
-        // "tab.activeBorder": "#fbfbfb"
+        // "tab.activeBorder": "#fbfbfb",
+        // "editor.selectionHighlightBorder": "#FFFA",
     },
     "editor.formatOnSave": true,
     "explorer.openEditors.visible": 1,
     "breadcrumbs.enabled": false,
     "extensions.ignoreRecommendations": false,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "MonoLisa",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 13,
+    "editor.fontLigatures": "'ss02' on",
     "editor.fontSize": 14,
-    "editor.lineHeight": 22,
-    "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.hover.enabled": false,
     "editor.cursorBlinking": "expand",
     "editor.renderWhitespace": "none",
     "editor.tabSize": 2,
     "editor.wordBasedSuggestions": "off",
-    "editor.tokenColorCustomizations": {
-        "[Hop Light]": {
-            "comments": "#555"
-        }
-    },
     "files.associations": {
         ".env.*": "env",
         ".env.local.*": "env"
@@ -49,12 +45,12 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
     },
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.diagnosticSeverityOverrides": {
-        "reportIncompatibleMethodOverride": "error"
-    },
-    "terminal.integrated.fontFamily": "Consolas"
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+    //windows
+    //   "python.terminal.activateEnvInCurrentTerminal": true,
+    //  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
 }
