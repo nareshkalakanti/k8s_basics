@@ -1,0 +1,25 @@
+# Create alias 'M' for making a directory
+New-Alias -Name M -Value New-Item -Description "Create directory" -Option AllScope
+# Create a function to ensure M always creates directories
+function Make-Directory {
+    param([string]$path)
+    New-Item -Path $path -ItemType Directory
+}
+Set-Alias -Name M -Value Make-Directory -Option AllScope -Force
+
+# Create alias 'r' for removing folders
+New-Alias -Name r -Value Remove-Item -Description "Remove folder" -Option AllScope
+
+# Create alias 'rf' for removing files
+function Remove-File {
+    param([string]$path)
+    Remove-Item -Path $path -Force
+}
+Set-Alias -Name rf -Value Remove-File -Option AllScope
+
+# Create alias 'c' for creating files
+function Create-File {
+    param([string]$path)
+    New-Item -Path $path -ItemType File
+}
+Set-Alias -Name c -Value Create-File -Option AllScope
